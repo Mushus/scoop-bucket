@@ -25,5 +25,8 @@
         "New-Item -ErrorAction Ignore $env:USERPROFILE\\.vst -ItemType Directory",
         "New-Item -Type Junction -Path $env:USERPROFILE\\.vst\\poano-one -Value $dir"
     ],
+    "uninstaller": {
+        "script": ["(Get-Item $env:USERPROFILE\\.vst\\poano-one).Delete()"]
+    },
     "##": "NOTE: バージョンをチェックする手段がない"
 }
