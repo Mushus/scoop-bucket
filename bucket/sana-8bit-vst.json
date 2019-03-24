@@ -1,0 +1,24 @@
+{
+    "homepage": "https://github.com/m-masaki72/SANA_8BIT_VST",
+    "version": "1.4",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://github.com/m-masaki72/SANA_8BIT_VST/blob/master/LICENSE"
+    },
+    "url": "https://github.com/m-masaki72/SANA_8BIT_VST/releases/download/v1.4/SANA_8BIT_VST.zip",
+    "architecture": {
+        "64bit": {
+            "extract_dir": "SANA_8BIT_VST/windows/64bit"
+        },
+        "32bit": {
+            "extract_dir": "SANA_8BIT_VST/windows/32bit"
+        }
+    },
+    "checkver": {
+        "github": "https://github.com/m-masaki72/SANA_8BIT_VST/",
+        "re": "releases/tag/v(\\d+\\.\\d+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/m-masaki72/SANA_8BIT_VST/releases/download/v$version/SANA_8BIT_VST.zip"
+    }
+}
