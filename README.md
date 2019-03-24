@@ -27,7 +27,9 @@ VST Path:
 
 ## Contribution
 
-### Package Name
+### Naming Rule
+
+#### Package Name
 
 ```
 kebab-case
