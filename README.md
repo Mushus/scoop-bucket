@@ -3,10 +3,17 @@ scoop bucket
 
 ## How to Use
 
-first time:
+### Install scoop
+
+See [lukesampson/scoop](https://github.com/lukesampson/scoop).
+
+### Add bucket
+
 ```
 scoop bucket add mushus git@github.com:Mushus/scoop-bucket.git
 ```
+
+### Install apps
 
 ```
 scoop update
@@ -18,9 +25,9 @@ VST Path:
 %USERPLOFILE%\.vst
 ```
 
-## contribution
+## Contribution
 
-### package name
+### Package Name
 
 ```
 kebab-case
