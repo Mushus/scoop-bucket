@@ -59,7 +59,7 @@ exe ファイルが終了するまで待機する必要があるが、以下の�
 
 ```json
 {
-    uninstaller: {
+    "uninstaller": {
         "scripts": [
             ". $dir\\unins000.exe /VERYSILENT /SUPPRESSMSGBOXES | Out-Null"
         ]
