@@ -11,6 +11,9 @@
         "New-Item -ErrorAction Ignore $env:USERPROFILE\\.vst -ItemType Directory",
         "New-Item -Type Junction -Path $env:USERPROFILE\\.vst\\sana-8bit-vst -Value $dir"
     ],
+    "uninstaller": {
+        "script": ["(Get-Item $env:USERPROFILE\\.vst\\sana-8bit-vst).Delete()"]
+    },
     "architecture": {
         "64bit": {
             "extract_dir": "SANA_8BIT_VST/windows/64bit"
