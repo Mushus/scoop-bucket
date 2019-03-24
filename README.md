@@ -37,8 +37,10 @@ kebab-case
 
 ### Tips
 
-`*.exe` , `*.msi` 等の拡張子のファイルでも `7zip` で解凍できるファイルは慣用的に `dl.7z` と言う名前にしているよう。
-インストールのコードによると、 `*.zip` , `*.exe` 以外はすべて `7zip` で解凍することになっているようだ。
+#### exe ファイルの簡易展開
+
+`*.exe` , `*.msi` 等の拡張子のファイルでも `7zip` で解凍できるファイルは慣用的に `dl.7z` と言う名前にしているよう。  
+インストールのコードによると、 `*.zip` , `*.exe` 以外はすべて `7zip` で解凍することになっているようだ。  
 [source code](https://github.com/lukesampson/scoop/blob/ad01bff66750a3a611c0cb0e0af0e5730912a342/lib/install.ps1#L548-L554)
 
 `manifest.json` で以下のように suffix として `#dl.7z` とすれば自動的に解凍される。
@@ -46,5 +48,21 @@ kebab-case
 ```json
 {
     "url": "https://example.com/xxx.zip#dl.7z"
+}
+```
+
+#### アンインストーラーによるアンインストール
+
+アンインストールを `scripts` で記述する場合、 exe ファイルの実行を待ってくれない。  
+その状態でアンインストーラーを実行するとディレクトリが速やかに削除され、アンインストーラーが失敗することがある。  
+exe ファイルが終了するまで待機する必要があるが、以下の記述で可能。  
+
+```json
+{
+    uninstaller: {
+        "scripts": [
+            ". $dir\\unins000.exe /VERYSILENT /SUPPRESSMSGBOXES | Out-Null"
+        ]
+    }
 }
 ```
