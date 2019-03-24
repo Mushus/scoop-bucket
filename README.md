@@ -17,3 +17,11 @@ VST Path:
 ```
 %USERPLOFILE%\.vst
 ```
+
+## contribution
+
+### package name
+
+```
+kebab-case
+```
