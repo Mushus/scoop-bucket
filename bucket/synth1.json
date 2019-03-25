@@ -16,7 +16,7 @@
     },
     "checkver": {
         "url": "http://www.geocities.jp/daichi1969/softsynth/",
-        "re": "http://www\\.geocities\\.jp/daichi1969/softsynth/Synth1V([0-9a-zA-Z\\.]+)\\.zip"
+        "re": "Synth1V([0-9a-z]+)\\.zip"
     },
     "autoupdate": {
         "url": "http://www.geocities.jp/daichi1969/softsynth/Synth1V$version.zip"
