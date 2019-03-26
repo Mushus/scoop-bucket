@@ -25,6 +25,26 @@ VST Path:
 %USERPLOFILE%\.vst
 ```
 
+## Apps (VST)
+
+### K
+
+* Kairatune ( [kairatune](bucket/kairatune.json) )
+
+### M
+
+* MT Power DrumKit ( [mt-power-drum-kit](bucket/mt-power-drum-kit.json) )
+
+### P
+
+* PianoOne ( [piano-one](bucket/piano-one.json) )
+
+### S
+
+* SANA8BitVST ( [sana-8bit-vst](bucket/sana-8bit-vst.json) )
+* sforzando ( [sforzando](bucket/sforzando.json) )
+* Synth1 ( [Synth1](bucket/synth1.json) )
+
 ## Contribution
 
 ### Naming Rule
