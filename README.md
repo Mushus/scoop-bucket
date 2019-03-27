@@ -27,6 +27,14 @@ VST Path:
 
 ## Apps (VST)
 
+### A
+
+* Ample Bass P Lite II ( [ample-bass-p-lite](bucket/ample-bass-p-lite.json) )
+
+### D
+
+* Drum Pro ( [drum-pro](bucket/drum-pro.json) )
+
 ### K
 
 * Kairatune ( [kairatune](bucket/kairatune.json) )
@@ -44,6 +52,10 @@ VST Path:
 * SANA8BitVST ( [sana-8bit-vst](bucket/sana-8bit-vst.json) )
 * sforzando ( [sforzando](bucket/sforzando.json) )
 * Synth1 ( [Synth1](bucket/synth1.json) )
+
+### T
+
+* TAL-Elek7ro ( [tal-elek7ro](bucket/tal-elek7ro.json) )
 
 ## Contribution
 
