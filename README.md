@@ -72,14 +72,14 @@ kebab-case
 #### exe ファイルの簡易展開
 
 `*.exe` , `*.msi` 等の拡張子のファイルでも `7zip` で解凍できるファイルは慣用的に `dl.7z` と言う名前にしているよう。  
-インストールのコードによると、 `*.zip` , `*.exe` 以外はすべて `7zip` で解凍することになっているようだ。  
+インストールのコードによると、 `*.zip` , `*.msi` 以外はすべて `7zip` で解凍することになっているようだ。  
 [source code](https://github.com/lukesampson/scoop/blob/ad01bff66750a3a611c0cb0e0af0e5730912a342/lib/install.ps1#L548-L554)
 
 `manifest.json` で以下のように suffix として `#dl.7z` とすれば自動的に解凍される。
 
 ```json
 {
-    "url": "https://example.com/xxx.zip#dl.7z"
+    "url": "https://example.com/xxx.exe#dl.7z"
 }
 ```
 
@@ -97,4 +97,12 @@ exe ファイルが終了するまで待機する必要があるが、以下の�
         ]
     }
 }
+```
+
+#### サイレントインストール方法を調べる
+
+`/?` フラグをつけると教えてくれることもある。
+
+```
+. .\dl.exe /?
 ```
