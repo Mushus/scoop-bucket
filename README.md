@@ -30,6 +30,7 @@ VST Path:
 ### A
 
 * Ample Bass P Lite II ( [ample-bass-p-lite](bucket/ample-bass-p-lite.json) )
+* Ample Guiter M Lite II ( [ample-guiter-m-lite](bucket/ample-guiter-m-lite.json) )
 
 ### D
 
