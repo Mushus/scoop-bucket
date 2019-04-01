@@ -32,6 +32,10 @@ VST Path:
 * Ample Bass P Lite II ( [ample-bass-p-lite](bucket/ample-bass-p-lite.json) )
 * Ample Guiter M Lite II ( [ample-guiter-m-lite](bucket/ample-guiter-m-lite.json) )
 
+### B
+
+* Bit Box ( [bit-box](bucket/bit-box.json) )
+
 ### D
 
 * Drum Pro ( [drum-pro](bucket/drum-pro.json) )
