@@ -1,0 +1,17 @@
+{
+    "description": "Virtual synthesizer for chiptune",
+    "version": "2",
+    "license": {
+        "identifier": "Freeware"
+    },
+    "url": "http://www.milkcrate.com.au/ub/Medusa2.zip",
+    "hash": "270fd98d0ceabd078865f951357a97fed3a38109673d8d299fabf9d0e186091a",
+    "post_install": [
+        "New-Item -ErrorAction Ignore $env:USERPROFILE\\.vst -ItemType Directory",
+        "New-Item -Type Junction -Path $env:USERPROFILE\\.vst\\medusa -Value $dir"
+    ],
+    "uninstaller": {
+        "script": ["(Get-Item $env:USERPROFILE\\.vst\\medusa).Delete()"]
+    },
+    "##": "NOTE: バージョンをチェックする手段がない"
+}

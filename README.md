@@ -46,6 +46,7 @@ VST Path:
 
 ### M
 
+* MEDUSA ( [medusa](bucket/medusa.json) )
 * MT Power DrumKit ( [mt-power-drum-kit](bucket/mt-power-drum-kit.json) )
 
 ### P
