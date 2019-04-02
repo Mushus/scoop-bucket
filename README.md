@@ -52,6 +52,7 @@ VST Path:
 ### P
 
 * PianoOne ( [piano-one](bucket/piano-one.json) )
+* PongDelay2 ( [pong-delay2](bucket/pong-delay2.json) )
 
 ### S
 
